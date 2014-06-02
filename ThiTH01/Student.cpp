@@ -3,7 +3,7 @@
 void Student::Nhap()
 {
     ifstream finput;
-    finput.open("D:\\INPUT.IN");
+    finput.open("INPUT.IN" , ios::in);
     istringstream ss;
     string line;
     int i = 0;
@@ -34,7 +34,7 @@ void Student::Xuat()
 {
     ofstream foutput;
     foutput.open("OUTPUT.OUT", ios::out | ios::app);
-    cout << _HoVaTen << _SoCMND << DiemToan << DiemTin << DiemNgoaiNgu << DiemTB << endl;
+    cout << _HoVaTen << endl << _SoCMND << endl << DiemToan << endl << DiemTin << endl << DiemNgoaiNgu << endl << DiemTB << endl;
     foutput << _HoVaTen << ' ' << _SoCMND << ' ' << DiemToan << ' ' << DiemTin << ' ' << DiemNgoaiNgu << ' ' << DiemTB << endl;
     foutput.close();
 }

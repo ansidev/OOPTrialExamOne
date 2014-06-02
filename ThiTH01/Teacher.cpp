@@ -9,7 +9,7 @@ void Teacher::TinhLuong()
 void Teacher::Nhap()
 {
     ifstream finput;
-    finput.open("D:\\INPUT.IN");
+    finput.open("INPUT.IN", ios::in);
     int i = 0;
     if (finput.is_open())
     {

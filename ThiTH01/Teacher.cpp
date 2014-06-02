@@ -37,7 +37,7 @@ void Teacher::Nhap()
 void Teacher::Xuat()
 {
     ofstream foutput;
-    foutput.open("D:\\OUTPUT.OUT", ios::app);
+    foutput.open("OUTPUT.OUT", ios::out | ios::app);
     foutput << _HoVaTen << ' ' << _SoCMND << ' ' << _LuongCoBan << ' ' << _HeSoLuong << ' ' << _Luong << endl;
     foutput.close();
 }

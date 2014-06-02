@@ -33,7 +33,7 @@ void Student::Nhap()
 void Student::Xuat()
 {
     ofstream foutput;
-    foutput.open("D:\\OUTPUT.OUT", ios::app);
+    foutput.open("OUTPUT.OUT", ios::out | ios::app);
     cout << _HoVaTen << _SoCMND << DiemToan << DiemTin << DiemNgoaiNgu << DiemTB << endl;
     foutput << _HoVaTen << ' ' << _SoCMND << ' ' << DiemToan << ' ' << DiemTin << ' ' << DiemNgoaiNgu << ' ' << DiemTB << endl;
     foutput.close();

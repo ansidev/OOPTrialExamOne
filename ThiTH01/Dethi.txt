@@ -1,0 +1,35 @@
+Xây dựng các lớp Person, Teacher, Student để thực hiện đoạn chương trình sau:
+Teacher t; t.Nhap();
+Student s; s.Nhap();
+Person* p;
+p = &t; p->TinhLuong(); p->Xuat();
+p = &s; p->TinhDTB(); p->Xuat();
+Thông tin của Teacher gồm có : họ tên, số chứng minh nhân dân, lương cơ bản, hệ 
+số lương, lương. Lương của Teacher được tính bằng hệ số lương * lương cơ bản
+thông qua phương thức TinhLuong().
+Thông tin của Student gồm có: họ tên, số chứng minh nhân dân, điểm toán, điểm tin, 
+điểm ngoại ngữ, điểm trung bình. Điểm trung bình của Student được tính bằng trung 
+bình cộng của điểm toán, điểm tin, điểm ngoại ngữ thông qua phương thức 
+TinhDTB().
+Thông tin của Teacher, Student được nhập từ file INPUT.IN thông qua phương thức 
+Nhap() . Các thông tin của Teacher, Student được xuất ra file OUTPUT.OUT thông 
+qua phương thức Xuat().
+Cấu trúc file INPUT.IN :
+-  Dòng đầu tiên chứa các thông tin của Teacher theo thứ tự lần lượt là họ tên, 
+số chứng minh nhân dân, lương cơ bản, hệ số lương. Mỗi thông tin cách nhau 
+bởi 1 khoảng trắng.
+-  Dòng tiếp theo chứa các thông tin của Student theo thứ tự lần lượt là họ tên, 
+số chứng minh nhân dân, điểm toán, điểm tin, điểm ngoại ngữ. Mỗi thông tin 
+cách nhau bởi 1 khoảng trắng.
+Cấu trúc file OUTPUT.OUT :
+-  Dòng đầu tiên chứa các thông tin của Teacher theo thứ tự lần lượt là họ tên, 
+số chứng minh nhân dân, lương cơ bản, hệ số lương, lương. Mỗi thông tin 
+cách nhau bởi 1 khoảng trắng.
+-  Dòng tiếp theo chứa các thông tin của Student theo thứ tự lần lượt là họ tên, 
+số chứng minh nhân dân, điểm toán, điểm tin, điểm ngoại ngữ, điểm trung 
+bình. Mỗi thông tin cách nhau bởi 1 khoảng trắng.
+Ví dụ:
+INPUT.IN					OUTPUT.OUT
+NguyenA 123456789 500 2		NguyenA 123456789 500 2 1000
+TranB 987654321 10 9 8		TranB 987654321 10 9 8 9
+
